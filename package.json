@@ -1,0 +1,16 @@
+{
+  "name": "mongodb-node-mocha",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "mongoose": "^4.9.0",
+    "mocha": "^3.2.0"
+  }
+}
