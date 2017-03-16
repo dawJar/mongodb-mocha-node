@@ -2,7 +2,7 @@ const assert = require('assert');
 const Person = require('../model/person');
 
 
-describe('#update()', function () {
+describe('#updatePerson()', function () {
 
     let person;
 
@@ -19,7 +19,7 @@ describe('#update()', function () {
         });
     });
 
-    it('updating one record from db', function (done) {
+    it('updating one record from Person collection', function (done) {
         let newAge = 6;
         Person.findOneAndUpdate({ name: person.name }, { age: newAge }).then(function () {
             Person.findOne({ _id: person._id }).then(function (result) {

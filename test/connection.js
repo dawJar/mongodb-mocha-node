@@ -23,9 +23,13 @@ before(function (done) {
 // mocha hook
 // drop collections before every test
 beforeEach(function (done) {
-
     mongoose.connection.collections.people.drop(function () {
         done();
-    })
+    });
+});
 
+beforeEach(function (done) {
+    mongoose.connection.collections.carbrands.drop(function () {
+        done();
+    });
 });

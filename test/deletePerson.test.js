@@ -2,7 +2,7 @@ const assert = require('assert');
 const Person = require('../model/person');
 
 
-describe('#delete()', function () {
+describe('#deletePerson()', function () {
 
     let person;
 
